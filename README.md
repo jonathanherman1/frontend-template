@@ -6,7 +6,6 @@ This is the frontend application for a full stack MERN demo. It is built using R
 
 - [Frontend Demo](#frontend-demo)
   - [Table of Contents](#table-of-contents)
-  - [Screenshots](#screenshots)
   - [Features](#features)
   - [Installation](#installation)
   - [Environment Variables](#environment-variables)
@@ -15,17 +14,10 @@ This is the frontend application for a full stack MERN demo. It is built using R
   - [Testing](#testing)
   - [License](#license)
 
-## Screenshots
-
-- [Demo Video](https://youtu.be/gaenyhsL5nQ)
-- [Empty State](https://drive.google.com/file/d/1gr1-yTLu2YKLaOJLtR0h1Uq18G_uNj5G/view)
-- [Empty State - Dark Mode](https://drive.google.com/file/d/1RfR83t4u-yvs3ktX9XUWamNGTmclKbEd/view)
-- [Mobile](https://drive.google.com/file/d/12SuMZT9mkExthe4bI7qvUgXx9Irj4Y44/view)
-- [Mobile - Dark Mode](https://drive.google.com/file/d/1jS4Y6XjPDFNU3RtEbfLeZUCept6nFGK6/view)
-
 ## Features
 
 - Form validation with React Hook Form and Zod
+- Zustand for global client state management
 - Responsive design with Tailwind CSS
 - Unit and integration tests with Vitest and Testing Library
 - End-to-end tests with Cypress
