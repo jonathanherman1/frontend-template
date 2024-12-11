@@ -9,18 +9,18 @@ describe('Posts', () => {
   ]
 
   it('renders without crashing', () => {
-    const { container } = render(<Posts posts={mockPosts} />)
+    const { container } = render(<Posts posts={mockPosts} loading={false} error={''}/>)
     expect(container).toBeInTheDocument()
   })
 
   it('renders the correct number of posts', () => {
-    const { getAllByTestId } = render(<Posts posts={mockPosts} />)
+    const { getAllByTestId } = render(<Posts posts={mockPosts} loading={false} error={''}/>)
     const posts = getAllByTestId('post')
     expect(posts.length).toBe(mockPosts.length)
   })
 
   it('renders the post content correctly', () => {
-    const { getByText } = render(<Posts posts={mockPosts} />)
+    const { getByText } = render(<Posts posts={mockPosts} loading={false} error={''}/>)
     mockPosts.forEach((post) => {
       expect(getByText(post.name)).toBeInTheDocument()
       expect(getByText(post.message)).toBeInTheDocument()
@@ -28,7 +28,7 @@ describe('Posts', () => {
   })
 
   it('handles empty posts array', () => {
-    const { getByText } = render(<Posts posts={[]} />)
+    const { getByText } = render(<Posts posts={[]} loading={false} error={''}/>)
 
     expect(getByText(/no posts/i)).toBeInTheDocument()
   })
